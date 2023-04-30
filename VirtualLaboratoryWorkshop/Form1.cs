@@ -84,6 +84,12 @@ namespace VirtualLaboratoryWorkshop
         //переменные для вычисления
         private double a, b, h, Hm, W, t, u, x, y;
 
+        private void dbBtn_Click(object sender, EventArgs e)
+        {
+            DataBaseForm dbform = new DataBaseForm();
+            dbform.ShowDialog();
+        }
+
         private void saveParametrs_Click(object sender, EventArgs e)
         {
             if (TextBoxHm.Text != "" && TextBoxw.Text != "" && TextBox_t.Text != "" && TextBox_x.Text != "" && TextBox_u.Text != "" &&
@@ -123,6 +129,12 @@ namespace VirtualLaboratoryWorkshop
                     MessageBox.Show("Поля параметров должны быть заполнены!", "Внимание!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                     //DefaultParams();
+                }
+                else if (textBox_A.Text == "0" || textBox_B.Text == "0" || textBox_h.Text == "0" || TextBoxHm.Text == "0" || TextBoxw.Text == "0" ||
+                    TextBox_t.Text == "0" || TextBox_x.Text == "0" || TextBox_u.Text == "0")
+                {
+                    MessageBox.Show("Поля не должны иметь нулевые значения");
+                    return;
                 }
                 else
                 {

@@ -43,7 +43,9 @@ namespace VirtualLaboratoryWorkshop
             // 
             // TaskDataGridView
             // 
-            this.TaskDataGridView.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TaskDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TaskDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.TaskDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -59,7 +61,6 @@ namespace VirtualLaboratoryWorkshop
             this.TaskDataGridView.Name = "TaskDataGridView";
             this.TaskDataGridView.RowHeadersWidth = 51;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Empty;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.TaskDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.TaskDataGridView.RowTemplate.Height = 24;

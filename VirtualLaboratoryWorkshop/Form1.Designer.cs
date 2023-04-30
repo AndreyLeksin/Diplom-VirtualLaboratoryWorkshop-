@@ -192,6 +192,7 @@ namespace VirtualLaboratoryWorkshop
             this.dbBtn.TabIndex = 11;
             this.dbBtn.Text = "База Данных";
             this.dbBtn.UseVisualStyleBackColor = false;
+            this.dbBtn.Click += new System.EventHandler(this.dbBtn_Click);
             // 
             // groupBox2
             // 
@@ -393,7 +394,7 @@ namespace VirtualLaboratoryWorkshop
             this.calculate.Name = "calculate";
             this.calculate.Size = new System.Drawing.Size(200, 50);
             this.calculate.TabIndex = 15;
-            this.calculate.Text = "Расчитать";
+            this.calculate.Text = "Рассчитать";
             this.calculate.UseVisualStyleBackColor = true;
             this.calculate.Click += new System.EventHandler(this.calculate_Click);
             // 
